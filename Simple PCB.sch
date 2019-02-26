@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Simple PCB-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -43,4 +44,22 @@ Connection ~ 1700 2100
 Connection ~ 1800 2100
 Wire Wire Line
 	1800 2100 1700 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5C756188
+P 1300 5750
+F 0 "#PWR?" H 1300 5500 50  0001 C CNN
+F 1 "GND" H 1305 5577 50  0000 C CNN
+F 2 "" H 1300 5750 50  0001 C CNN
+F 3 "" H 1300 5750 50  0001 C CNN
+	1    1300 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5700 1700 5700
+Wire Wire Line
+	1700 5700 1300 5700
+Wire Wire Line
+	1300 5700 1300 5750
+Connection ~ 1700 5700
 $EndSCHEMATC
